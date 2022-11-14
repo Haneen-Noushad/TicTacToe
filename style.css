@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: linear-gradient(to left, rgb(252, 118, 118) , rgb(143, 143, 229));  
+}
+
+.header{
+    /* font-family: 'Rock Salt', cursive; */
+    font-family: 'Ma Shan Zheng', cursive;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: #333;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: -20px;
+
+}
+
+.game{
+    display:none;
+}
+
+td{
+    border: 10px groove #222 ;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+    color: #333;
+    cursor: pointer;    
+}
+
+table{
+    border-collapse: collapse;
+    position: relative;
+    left: 50%;
+    margin-left: -155px;
+    top: 50px;
+   
+}
+
+table tr:first-child td{
+    border-top: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table tr td:first-child {
+    border-left: 0;
+}
+
+table tr td:last-child {
+    border-right: 0;
+}
+
+.endgame{
+    display:none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    top:0;
+    bottom:0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+.startgame{
+    display:none;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    top:0;
+    bottom:0;
+    right:0;
+    position: absolute;
+    left: 0;    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+    font-size: 10rem;
+}
+
+.startgame button{
+    border: #333 groove 10px;
+    background-color: transparent;
+    width:200px;
+    height:200px;
+    border-radius: 5%;
+    font-size: 10rem;
+    color: #333;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.startgame button:hover{
+    background-color: #333;
+    color: white;
+    font-size:11rem;
+}
+
+.endgame button{
+    border: #222 solid 2px;
+    padding: 0.5rem;
+    border-radius: 5%;
+    font-size: 2rem;
+    color: #333;
+    margin: 20px;
+}
+
+.endgame button:hover{
+    background-color: #333;
+    color: white;
+}

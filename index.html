@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css"  rel="stylesheet">
+        <title>Tic-Tac-Toe with AI</title>
+        <link rel="shortcut icon" href="#">
+    </head>
+    <body>
+        <div class="header"><h2>TIC-TAC-TOE</h2></div>
+        
+        
+        <br>
+        <div class="game">
+        <table>
+            <tr>
+                <td class="cell" id="0"></td>
+                <td class="cell" id="1"></td>
+                <td class="cell" id="2"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="3"></td>
+                <td class="cell" id="4"></td>
+                <td class="cell" id="5"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="6"></td>
+                <td class="cell" id="7"></td>
+                <td class="cell" id="8"></td>
+            </tr>
+        </table>
+        </div>
+        <br>
+        <div class="startgame">
+            <div class="text"></div>
+            <button onclick="start1()">X</button>
+            <button onclick="start2()">O</button>
+        </div>
+        <div class="endgame">
+                <div class="text"></div>
+                <button onclick="restart()">Restart</button>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
